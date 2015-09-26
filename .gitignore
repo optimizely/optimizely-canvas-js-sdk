@@ -1,0 +1,7 @@
+node_modules/
+
+# node virtualenv
+.nodeenv/
+
+# PyCharm .idea dir
+.idea/
