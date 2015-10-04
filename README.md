@@ -10,8 +10,6 @@ To install this package in your node environment, run:
 npm install "git+ssh://github.com/optimizely/optimizely-canvas-js-sdk.git"
 ```
 
-TODO(jon): Publish in npm registry.
-
 ##Usage
 
 *Note*: This example request is properly signed (albeit with a weak demo secret), so feel free to try actually parsing
@@ -48,3 +46,16 @@ var userContext = canvasSdk.extractUserContext('my_oauth_client_secret', signedR
    }
 }
 ```
+
+##Error Handling
+
+In the event the request is not properly signed, an error will be thrown:
+
+```js
+> var userContext = canvasSdk.extractUserContext('my_oauth_client_secret', 'nope' + signedRequest);
+Error: Request not properly signed.
+    at Error (native)
+```
+
+If an error is thrown, you should immediately return an HTTP 401 to the user and assume the request was malicious. Do
+not do any processing for the user or expose any data to the user.
