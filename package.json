@@ -1,6 +1,6 @@
 {
   "name": "optimizely-canvas-sdk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "SDK providing JavaScript utilities for developing on the Optimizely Canvas.",
   "main": "index.js",
   "scripts": {
