@@ -10,7 +10,7 @@ To install this package in your node environment, run:
 npm install optimizely-canvas-sdk
 ```
 
-##Usage
+## Usage
 
 *Note*: This example request is properly signed (albeit with a weak demo secret), so feel free to try actually parsing
 it with this package.
@@ -47,7 +47,7 @@ var userContext = canvasSdk.extractUserContext('my_oauth_client_secret', signedR
 }
 ```
 
-##Error Handling
+## Error Handling
 
 In the event the request is not properly signed, an error will be thrown:
 
