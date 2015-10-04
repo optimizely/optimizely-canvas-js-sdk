@@ -7,7 +7,7 @@ An SDK providing JavaScript utilities for developing on the Optimizely Canvas.
 To install this package in your node environment, run:
 
 ```bash
-npm install "git+ssh://github.com/optimizely/optimizely-canvas-js-sdk.git"
+npm install optimizely-canvas-sdk
 ```
 
 ##Usage
