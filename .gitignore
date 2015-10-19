@@ -1,0 +1,8 @@
+node_modules/
+npm-debug.log
+
+# node virtualenv
+.nodeenv/
+
+# PyCharm .idea dir
+.idea/
